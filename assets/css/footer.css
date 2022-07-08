@@ -1,0 +1,180 @@
+ul, li
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.footer{
+    background-color: #bd93f9;
+}
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.logo{
+    display: flex;
+    align-items: flex-start;
+
+}
+.logo > img{
+    height: 100px;
+}
+
+.menu__title__logo{
+    font-size: 52px;
+    margin-right: 0;
+}
+.footer__lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.footer__link > a{
+    color: aliceblue;
+    font-size: 22px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.cartao__titulo{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.input{
+    padding: 13px;
+    border: none;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+.formcontato__textarea{
+    padding: 13px;
+    border: none;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+.formcontato__botao{
+    width: 100%;
+}
+
+
+.footer__rodape{
+    background-color: #282a36;
+    padding: 1rem;
+    text-align: center;
+}
+.footer__socials{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.footer__socials a{
+    text-decoration: none;
+    color: #2A7AE4;
+}
+.footer__socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.footer__socials a:hover i{
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px gray;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    opacity: 0.9;
+}
+
+@media (max-width: 800px){
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 70%;
+    height: 364px;
+}
+.logo > img{
+    height: 70px;
+}
+.logo{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.menu__title__logo{
+    font-size: 22px;
+    margin-right: 0;
+}
+.links{
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+}
+.cartao__titulo{
+    padding: 0;
+    margin: 0;
+}
+
+}
+/*Celular*/
+@media (max-width: 425px){
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 1rem;
+}
+.logo{
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer__lista{
+    width: 350px;
+    text-align: center;
+    font-size: 16px;
+}
+.footer__link{
+    margin-bottom: 16px;
+}
+.footer__link:last-child
+{
+    margin-bottom: 8px;
+}
+.cartao__titulo{
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+}
